@@ -1,7 +1,8 @@
 import { useState } from "react";
-
+const Animals = ["bird", "cat", "dog ", "rabbit", "reptiles"];
 const SearchParams = () => {
   const [location, setLocation] = useState("");
+  const [animal, setAnimal] = useState("");
 
   return (
     <div className="search-params">
@@ -15,6 +16,20 @@ const SearchParams = () => {
             placeholder="Location"
           />
         </label>
+        <label htmlFor="animal">
+          Animal
+          <select
+            id="animal"
+            value={animal}
+            onChange={(e) => setAnimal(e.target.value)}
+          >
+            <option />
+            {Animals.map((animal) => {
+              <option key={animal}> {animal}</option>;
+            })}
+          </select>
+        </label>
+
         <button>Submit</button>
       </form>
     </div>
