@@ -1,0 +1,1 @@
+{"version":"1.0.0","name":"adopt-me","dependencies":{"@tanstack/react-query":{"version":"4.10.1"},"react-dom":{"version":"18.2.0"},"react-router-dom":{"version":"6.4.1"},"react":{"version":"18.2.0"}}}
