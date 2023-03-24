@@ -5,6 +5,7 @@ import Modal from "./Modal";
 import ErrorBoundary from "./ErrorBoundary";
 import fetchPet from "./fetchPets";
 import Carousel from "./Carousel";
+import ErrorBoundary from "./ErrorBoundary";
 
 const Details = () => {
   const { id } = useParams();
@@ -44,11 +45,3 @@ const Details = () => {
     </div>
   );
 };
-
-export default function DetailsErrorBoundary(props) {
-  return (
-    <ErrorBoundary>
-      <Details {...props} />
-    </ErrorBoundary>
-  );
-}
