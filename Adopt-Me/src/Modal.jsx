@@ -11,9 +11,6 @@ const Modal = ({ children }) => {
   useEffect(() => {
     const modalRoot = document.getElementById("modal");
     modalRoot.appendChild(elRef.current);
-  }, []);
 
-  return createPortal(<div>{children} </div>, elRef.current);
-};
 
 export default Modal;
